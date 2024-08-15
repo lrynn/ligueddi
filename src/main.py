@@ -8,7 +8,9 @@ if (DEBUG):
 
 from game import *
 
+import json
+with open('./src/locale/ko.json', 'r', encoding='utf8') as f:
+    locale = json.load(f)
 if (DEBUG):
     print('main.py', locale['debug']['loadLocale'])
 
-# 앙 리그띠 코드 불러오기
