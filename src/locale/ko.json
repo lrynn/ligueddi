@@ -4,5 +4,8 @@
     },
     "main":{
         
+    },
+    "game":{
+        "eventOccured":"이벤트 발생!"
     }
 }

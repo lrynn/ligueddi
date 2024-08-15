@@ -2,13 +2,13 @@
 VERSION = '0.0.0'
 DEBUG = 1
 
-import os
+from os import getcwd
 if (DEBUG):
-    print(os.getcwd())
+    print(getcwd())
 
-import json
-with open('./src/locale/ko.json', 'r', encoding='utf8') as f:
-    locale = json.load(f)
+from game import *
+
 if (DEBUG):
-    print(locale['debug']['loadLocale'])
+    print('main.py', locale['debug']['loadLocale'])
 
+# 앙 리그띠 코드 불러오기
